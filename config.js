@@ -1,3 +1,2 @@
-window.FISHAY_CONFIG = {
-  webAppUrl: "https://script.google.com/macros/s/AKfycbymtHkBvRSpGa5ECTKjNc-RVgk7LaoHLIxSko3wFQ_L_tfharyfjpXPHO7eOd5AIMDnXw/exec"
-};
+// Hier ausschließlich den öffentlichen /exec-Link eintragen. Keine Passwörter oder Tokens!
+window.FISHAY_CONFIG = { webAppUrl: "" };

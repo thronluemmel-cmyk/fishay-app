@@ -14,7 +14,7 @@ function openCup(){
   if(!appUrl)return;
   if(!navigator.onLine){$('status').textContent='Bitte zuerst eine Internetverbindung herstellen.';return;}
   $('landing').hidden=true;$('cup').hidden=false;
-  if(!started){const u=new URL(appUrl);u.searchParams.set('embed','1');$('frame').src=u.href;started=true;}
+  if(!started){const u=new URL(appUrl);u.searchParams.set('embed','1');u.searchParams.set('bridge',bridgeNonce);$('frame').src=u.href;started=true;}
   $('fallback').hidden=false;
 }
 $('open').onclick=openCup;
